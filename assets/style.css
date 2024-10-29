@@ -1,0 +1,145 @@
+:root {
+    --color-body: #000000;
+
+    /* Cores da seção à esquerda */
+    --color-left-background: #C4C4C4;
+    --color-left-card: #F2EFE5;
+    --color-button-cancel: #EC1B1B;
+    --color-button-checkout: #3F9EF7;
+    --color-left-text: #000000;
+
+    /* Cores da seção à direita */
+    --color-rigth-background: #1C1B1B;
+    --color-right-text: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-body);
+}
+
+/* ---------- Seção à esquerda ---------- */
+.article-left-white {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--color-left-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+/* ---------- Seção à esquerda - header ---------- */
+.header-left-white {
+    width: 100%;
+    height: 11vh;
+    background-color: #EC1B1B;
+    display: flex;
+}
+
+.div-left-white {
+    width: 50%;
+    height: 11vh;
+    background-color: var(--color-left-background);
+}
+
+.div-right-white {
+    width: 50%;
+    height: 11vh;
+    background-color: var(--color-left-background);
+}
+
+/* ---------- Seção à esquerda - section card ---------- */
+.section-white {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-left-card);
+    border-radius: 4vh;
+    padding: 2vh;
+    gap: 2vh;
+}
+
+.card-white1 {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--color-left-background);    display: flex;
+    gap: 2vh;
+    border-radius: 4vh;
+}
+
+.card-white2 {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--color-left-background);
+    display: flex;
+    gap: 2vh;
+    border-radius: 4vh;
+}
+
+.card-white3 {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--color-left-background);    
+    display: flex;
+    gap: 2vh;
+    border-radius: 4vh;
+}
+
+.card-white4 {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--color-left-background);
+    display: flex;
+    gap: 2vh;
+    border-radius: 4vh;
+}
+
+/* ---------- Seção à esquerda - footer ---------- */
+.footer-white {
+    width: 100%;
+    height: 20vh;
+    background-color: #EC1B1B;
+}
+
+.section-price-white {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-left-background);
+}
+
+.section-footer-white {
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: var(--color-left-background);
+    gap: 35vh;
+}
+
+button {
+    width: 20%;
+    height: 6vh;
+    border-radius: 1vh;
+    border: none;
+}
+
+.button-cancel {
+    background-color: var(--color-button-cancel);
+    color: var(--color-left-text);
+}
+
+.button-checkout {
+    background-color: var(--color-button-checkout);
+    color: var(--color-left-text);
+}
