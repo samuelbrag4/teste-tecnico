@@ -13,11 +13,14 @@
     --color-right-text: #FFFFFF;
 }
 
+/* Reset de margens e paddings */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Estilo do corpo */
 body {
     background-color: var(--color-body);
 }
@@ -34,10 +37,20 @@ body {
 }
 
 /* ---------- Seção à esquerda - header ---------- */
+.img-user, .img-back {
+    width: 10%;
+    height: auto;
+}
+
+.img-bag {
+    width: 14%;
+    height: auto;
+}
+
 .header-left-white {
     width: 100%;
     height: 11vh;
-    background-color: #EC1B1B;
+    background-color: var(--color-left-background);
     display: flex;
 }
 
@@ -45,76 +58,182 @@ body {
     width: 50%;
     height: 11vh;
     background-color: var(--color-left-background);
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    gap: 2vh;
 }
 
 .div-right-white {
     width: 50%;
     height: 11vh;
     background-color: var(--color-left-background);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* ---------- Seção à esquerda - section card ---------- */
 .section-white {
-    width: 90%;
+    width: 80%;
     height: 70vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: var(--color-left-card);
-    border-radius: 4vh;
+    border-radius: 2vh;
     padding: 2vh;
     gap: 2vh;
 }
 
-.card-white1 {
-    width: 100%;
-    height: 15vh;
-    background-color: var(--color-left-background);    display: flex;
-    gap: 2vh;
-    border-radius: 4vh;
-}
-
-.card-white2 {
-    width: 100%;
-    height: 15vh;
-    background-color: var(--color-left-background);
-    display: flex;
-    gap: 2vh;
-    border-radius: 4vh;
-}
-
-.card-white3 {
-    width: 100%;
+/* ---------- Seção à esquerda - cards ---------- */
+/* Estilo para o card branco 1, 2, 3 e 4 */
+.card-white1, .card-white2, .card-white3, .card-white4 {
+    width: 95%;
     height: 15vh;
     background-color: var(--color-left-background);    
     display: flex;
     gap: 2vh;
-    border-radius: 4vh;
+    border-radius: 2vh;
+    align-items: center;
 }
 
-.card-white4 {
-    width: 100%;
-    height: 15vh;
-    background-color: var(--color-left-background);
+/* Estilo para a imagem dos sapatos */
+.img-shoes {
+    width: 20%;
+    height: 90%;
+    border-radius: 4vh 0vh 0vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2vh;
+}
+
+/* Estilo para a linha de separação */
+.details-hr {
+    border: none;
+    width: 1px;
+    height: 80%;
+    background-color: #000000;
+}
+
+/* Estilo para a seção de detalhes */
+.details {
+    width: 80%;
+    height: 90%;
+    border-radius: 0vh 4vh 4vh 0vh;
+}
+
+/* Estilo para o cabeçalho dos detalhes */
+.details-header {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5vh;
+    border-radius: 0vh 1vh 1vh 0vh;
+}
+
+/* Estilo para o artigo dos detalhes */
+.details-article {
+    width: 96%;
+    height: 70%;
+    border-radius: 0vh 1vh 1vh 0vh;
+    display: flex;
+}
+
+/* Estilo para a imagem dos detalhes */
+.details-img {
+    width: 20%;
+    height: auto;
+    margin: 0;
+}
+
+/* Estilo para a cor dos detalhes */
+.details-color {
+    width: auto;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    gap: 0.5vh;
+}
+
+/* Estilo para o número da quantidade */
+.qty-number {
+    background-color: #FFFFFF;
+    width: 2vh;
+    text-align: center;
+}
+
+/* Estilo para os sapatos dos detalhes */
+.details-shoes {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Estilo para o tamanho dos detalhes */
+.details-size {
     display: flex;
     gap: 2vh;
-    border-radius: 4vh;
+}
+
+/* Estilo para o preço dos detalhes */
+.details-price {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 50%;
+    height: 100%;
+    gap: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* ---------- Seção à esquerda - footer ---------- */
 .footer-white {
     width: 100%;
     height: 20vh;
-    background-color: #EC1B1B;
+    gap: 2vh;
 }
 
 .section-price-white {
     width: 100%;
     height: 6vh;
     display: flex;
-    justify-content: center;
+}
+
+.div-price-left {
+    width: 60%;
+    height: 100%;
+}
+
+.div-price-rigth {
+    width: 40%;
+    height: 100%;
+    display: flex;
     align-items: center;
-    background-color: var(--color-left-background);
+    gap: 2vh;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-left: 11rem;
+}
+
+.number-price {
+    background-color: var(--color-left-card);
+    width: 8vh;
+    text-align: center;
 }
 
 .section-footer-white {
@@ -127,6 +246,7 @@ body {
     gap: 35vh;
 }
 
+/* Estilo para os botões */
 button {
     width: 20%;
     height: 6vh;
@@ -134,8 +254,17 @@ button {
     border: none;
 }
 
+.button-cancel, .button-checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    gap: 1vh;
+}
+
 .button-cancel {
-    background-color: var(--color-button-cancel);
+    background-color: var(--color-button-cancel);   
     color: var(--color-left-text);
 }
 
